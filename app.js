@@ -31,11 +31,11 @@ app.post("/", function(req, res) {
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us21.api.mailchimp.com/3.0/lists/83b3b33215";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/83b3b33215";
 
     const options = {
         method: "POST",
-        auth:"vedant:7d39f6cd1bfc6a2724861d3f6c79c9a4-us21"
+        auth:"vedant:API_KEY"
     }
 
     
@@ -57,7 +57,3 @@ app.post("/", function(req, res) {
 });
 
 app.listen(3000);
-
-// Audience ID - 83b3b33215
-
-// API key - 7d39f6cd1bfc6a2724861d3f6c79c9a4-us21
